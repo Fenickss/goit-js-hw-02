@@ -20,36 +20,16 @@ logItems(['Mango', 'Poly', 'Ajax', 'Lux', 'Jay', 'Kong']);
 
 logItems([5, 10, 15, 20, 25, 30, 35, 40, 45, 50]);
 ```*/
+/* ================================================================================================== */
+const logItems = function(array) {
+const arr = ['Mango', 'Poly', 'Ajax', 'Lux', 'Jay', 'Kong'];
+const number = [1, 2, 3, 4, 5, 6, 7];
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+for(let i = 0; i < 6; i += 1){  
+console.log(`${number[i]} - ${arr[i]}`)
+}
+}
+logItems();
 
 
 /*# Задание 2
@@ -111,7 +91,6 @@ console.log(findLongestWord('Google do a roll')); // 'Google'
 console.log(findLongestWord('May the force be with you')); // 'force'
 ```*/
 
-
 /*# Задание 4
 
 Напиши функцию `formatString(string)` которая принимает строку и форматирует ее
@@ -147,7 +126,6 @@ console.log(
 );
 // вернется форматированная строка
 ```*/
-
 
 /*# Задание 5
 
@@ -197,7 +175,6 @@ let input;
 const numbers = [];
 let total = 0;
 ```*/
-
 
 /*# Задание 7 - дополнительное, выполнять не обязательно
 
