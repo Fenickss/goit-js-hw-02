@@ -105,8 +105,8 @@ const findLongestWord = function(string) {
 
 ```*/
 /* ================================================================================================================================= */
-/* const findLongestWord = function (string) {
-  let words = string.split(" ");
+/*  const findLongestWord = function (string) {
+  const words = string.split(" ");
   let message = "";
   let longestWord;
 
@@ -123,7 +123,7 @@ console.log(findLongestWord("The quick brown fox jumped over the lazy dog")); //
 
 console.log(findLongestWord("Google do a roll")); // 'Google'
 
-console.log(findLongestWord("May the force be with you")); // 'force' */
+console.log(findLongestWord("May the force be with you")); // 'force'  */
 
 /*# Задание 4
 
@@ -160,6 +160,49 @@ console.log(
 );
 // вернется форматированная строка
 ```*/
+/* ============================================================================================================================== */
+/* const formatString = function (string) {
+  if (string.length <= 40) {
+    return string;
+  }else{
+    return `${string.slice(0, 40)} ...`;
+  }
+};
+
+console.log(formatString("Curabitur ligula sapien, tincidunt non."));
+// вернется оригинальная строка
+
+console.log(formatString("Vestibulum facilisis, purus nec pulvinar iaculis."));
+// вернется форматированная строка
+
+console.log(formatString("Curabitur ligula sapien."));
+// вернется оригинальная строка
+
+console.log(
+  formatString(
+    "Nunc sed turpis. Curabitur a felis in nunc fringilla tristique."
+  )
+); */
+
+
+const formatString = string => string.length >= 40 ? `${string.slice(0, 40)}...` : string;
+
+console.log(formatString("Curabitur ligula sapien, tincidunt non."));
+// вернется оригинальная строка
+
+console.log(formatString("Vestibulum facilisis, purus nec pulvinar iaculis."));
+// вернется форматированная строка
+
+console.log(formatString("Curabitur ligula sapien."));
+// вернется оригинальная строка
+
+console.log(
+    formatString(
+        "Nunc sed turpis. Curabitur a felis in nunc fringilla tristique."
+    )
+);
+// вернется форматированная строка
+
 
 /*# Задание 5
 
