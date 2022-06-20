@@ -21,17 +21,17 @@ logItems(['Mango', 'Poly', 'Ajax', 'Lux', 'Jay', 'Kong']);
 logItems([5, 10, 15, 20, 25, 30, 35, 40, 45, 50]);
 ```*/
 /* ================================================================================================== */
-const logItems = function(array) {
+/* const logItems = function() {
 const arr = ['Mango', 'Poly', 'Ajax', 'Lux', 'Jay', 'Kong'];
-const number = [1, 2, 3, 4, 5, 6, 7];
+let number = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50];
 
 for(let i = 0; i < 6; i += 1){  
 console.log(`${number[i]} - ${arr[i]}`)
 }
 }
-logItems();
+logItems(); */
 
-
+/* ============================================================================================================= */
 /*# Задание 2
 
 Напиши скрипт подсчета стоимости гравировки украшений. Для этого создай функцию
@@ -69,6 +69,19 @@ console.log(
   calculateEngravingPrice('Donec orci lectus aliquam est magnis', 20),
 ); // 120
 ```*/
+/* ============================================================================================================================== */
+/* const calculateEngravingPrice = function (message, pricePerWord) {
+  return message.split(" ").length * pricePerWord;
+};
+console.log(calculateEngravingPrice("Proin sociis natoque et magnis parturient montes mus", 10));
+
+console.log(
+  calculateEngravingPrice("Proin sociis natoque et magnis parturient montes mus", 20));
+
+console.log(calculateEngravingPrice("Donec orci lectus aliquam est magnis", 40));
+
+console.log(
+  calculateEngravingPrice("Donec orci lectus aliquam est magnis", 20)); */
 
 /*# Задание 3
 
@@ -83,13 +96,34 @@ const findLongestWord = function(string) {
 
 /*
  * Вызовы функции для проверки работоспособности твоей реализации.
- 
-console.log(findLongestWord('The quick brown fox jumped over the lazy dog')); // 'jumped'
+  console.log(findLongestWord("The quick brown fox jumped over the lazy dog")); // 'jumped'
 
-console.log(findLongestWord('Google do a roll')); // 'Google'
+  console.log(findLongestWord('Google do a roll')); // 'Google'
 
-console.log(findLongestWord('May the force be with you')); // 'force'
+  console.log(findLongestWord('May the force be with you')); // 'force' 
+
+
 ```*/
+/* ================================================================================================================================= */
+/* const findLongestWord = function (string) {
+  let words = string.split(" ");
+  let message = "";
+  let longestWord;
+
+  for (const word of words) {
+    if (word.length > message) {
+      message = word.length;
+      longestWord = word;
+    }
+  }
+
+  return longestWord;
+};
+console.log(findLongestWord("The quick brown fox jumped over the lazy dog")); // 'jumped'
+
+console.log(findLongestWord("Google do a roll")); // 'Google'
+
+console.log(findLongestWord("May the force be with you")); // 'force' */
 
 /*# Задание 4
 
