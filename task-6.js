@@ -31,9 +31,9 @@ for (let i = 0; i <= 10; i += 1) {
   input = Number(prompt("Введите число!!!"));;
   numbers.push(Number(input));
   total += input;
-  console.log(input);
+  
   console.log(numbers);
-  console.log(total);
+  
   if(input === 0){
     console.log(`Общая сумма чисел равна ${total}`);
     break;
