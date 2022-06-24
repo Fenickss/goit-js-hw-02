@@ -27,12 +27,17 @@ let input;
 let numbers = [];
 let total = 0;
 
-for (let i = 1; i <= 10; i += 1) {
-  input = prompt("Введите число!!!");
+for (let i = 0; i <= 10; i += 1) {
+  input = Number(prompt("Введите число!!!"));;
   numbers.push(Number(input));
+  total += input;
   console.log(input);
   console.log(numbers);
-  if()
+  console.log(total);
+  if(input === 0){
+    console.log(`Общая сумма чисел равна ${total}`);
+    break;
+  }
 }
 
 /* let input;
